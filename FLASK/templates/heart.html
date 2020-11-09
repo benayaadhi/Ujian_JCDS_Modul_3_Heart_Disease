@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Classification</title>
+</head>
+<body>
+    <h1> Heart Disease Classification</h1>
+    <form method="POST" action="http://127.0.0.1:5000/hasil">
+        Umur : <input type='number' name="sl"/>
+        <br> Jenis Kelamin : <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Kelamin" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Laki-Laki</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="Kelamin" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+          </div>
+        <br> Chest Pain : <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="CP" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Typical</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="CP" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">Asymptotic</label>
+          </div><div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="CP" id="inlineRadio1" value="option3">
+            <label class="form-check-label" for="inlineRadio3">nonanginal</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="CP" id="inlineRadio2" value="option4">
+            <label class="form-check-label" for="inlineRadio4">NonTypical</label>
+          </div>
+        <br> Rest BPS : <input type="number" name="pw"/>
+        <br> Cholestrol : <input type="number" name="chol"/>
+        <br> Blood Sugar >120mg/dl : <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fbs" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">Yes</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="fbs" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">No</label>
+          </div>
+          
+        <br>
+        <input type="submit" value="Classify"/>
+    </form>
+
+    <br>
+</body>
+</html>
